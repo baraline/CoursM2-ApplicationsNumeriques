@@ -8,10 +8,11 @@ Dans les précédentes parties du cours, vous avez étudié des sous familles du
     - Soit avec le zip sur la page git du projet, et ensuite extraction du zip
     - Soit avec un git clone https://github.com/baraline/CoursM2-ApplicationsNumeriques.git
     
+Si vous utilisez un IDE python (ex: Spyder inclut dans Anaconda) pas besoin des étapes 2,3,4. Mais dans ce cas créer un nouveau projet sur le répertoire `CoursM2-ApplicationsNumeriques`.
 2. Lancer une console python (via Anaconda ou votre installation de Python locale)
 3. Naviguer vers le dossier `CoursM2-ApplicationsNumeriques` sur votre disque
 4. Lancer la commande  `python setup.py install`
-5. Si vous rencontrer une erreur d'installation, me prévenir.
+5. Si vous rencontrez une erreur d'installation, me prévenir.
 6. Le sujet du TP est disponible dans le fichier `m2tpdm/README.md`
 
 ## Contributions
