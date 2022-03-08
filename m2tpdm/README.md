@@ -12,6 +12,7 @@ Le code déjà en place vous propose :
     
     
 Pour pimenter un peu cet exercice, je vous propose une petite compétition. Je vous fournis également un fichier `benchmark.py`, qui va vous permettre de tester votre méthode sur différents jeux de données.
+
     - la fonction `run_test_protocol()` lancera votre méthode sur un seul jeu de donnée. C'est cette fonction que vous allez utiliser pour vérifier que tout se passe bien dans l'exécution de votre code. Elle produira un CSV contenant le résultat de votre méthode sur des données de test.
     
     - la fonction `run_benchmark_protocol()` lancera votre méthode sur tous les jeux de données sélectionnés pour cette compétition. Elle produira aussi un CSV contenant le résultat de votre méthode sur des données de test ainsi que le résultat moyen sur l'ensemble des jeux de données.
