@@ -76,8 +76,8 @@ def _run_protocol(dataset_list):
         ##########################################################################################
         
         pipeline = make_pipeline(
-            my_shapelet(n_shapelets=100, shapelet_length=7),
-            RandomForestClassifier(ccp_alpha=0.01)
+            my_shapelet(),
+            RandomForestClassifier()
         )
         
         X_train, X_test, y_train, y_test, _ = load_sktime_dataset_split(dataset_name)
@@ -86,7 +86,13 @@ def _run_protocol(dataset_list):
         df_results.loc[dataset_name, 'timing'] = timing
         df_results.loc[dataset_name, 'shapelet'] = pipeline[0].__repr__()
         df_results.loc[dataset_name, 'classifier'] = pipeline[-1].__repr__()
-        
+    
+    df_results.loc['Global','timing'] = '{} (+/- {})'.format(
+        str(df_results['timing'].mean())[0:5], str(df_results['timing'].std())[0:5]
+    )
+    df_results.loc['Global','accuracy'] = '{} (+/- {})'.format(
+        str(df_results['accuracy'].mean())[0:5], str(df_results['accuracy'].std())[0:5]
+    )
     return df_results
 
 def run_test_protocol():

@@ -11,6 +11,7 @@ from m2tpdm.utils import generate_subsequences_2D, generate_subsequences_1D
 
 class my_shapelet(BaseEstimator, TransformerMixin):
     
+    # The default parameter will be used by default in the benchmark script !
     def __init__(self, n_shapelets=100, shapelet_length=9):
         """
         Initalize the object parameters
