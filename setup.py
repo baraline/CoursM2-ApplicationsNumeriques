@@ -22,13 +22,12 @@ setup(
    version=m2tpdm.__version__,
 	url="https://github.com/baraline/CoursM2-ApplicationsNumeriques",
    author_email="antoine.guillaume45@gmail.com",
-	python_requires='>=3.7',
+	python_requires='>=3.6.9',
    install_requires=[
-        "matplotlib >= 3.5",
-        "pandas >= 1.3.4",
-        "scikit_learn >= 1.0.2",
+        "pandas >= 1.1",
+        "scikit_learn >= 0.24.0",
         "sktime == 0.9",
         "numpy >= 1.19.3",
     ],
-    zip_safe=False
+    zip_safe=True
 )
