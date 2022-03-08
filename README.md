@@ -10,11 +10,11 @@ Dans les précédentes parties du cours, vous avez étudié des sous familles du
     
 Si vous utilisez un IDE python (ex: Spyder inclut dans Anaconda) pas besoin des étapes 2,3,4. Mais dans ce cas créer un nouveau projet sur le répertoire `CoursM2-ApplicationsNumeriques`.
 
-2. Lancer une console python (via Anaconda ou votre installation de Python locale)
+2. Lancer une console python (via Anaconda ou votre installation de Python locale). De préférence sur Anaconda, créer un nouvel environnement.
 
 3. Naviguer vers le dossier `CoursM2-ApplicationsNumeriques` sur votre disque
 
-4. Lancer la commande  `python setup.py install`
+4. Lancer la commande  `python setup.py install`. Si plusieurs versions de Python sont présentes sur l'ordinateur, privilégié `python3 setup.py install`, si il y a des problèmes de droits `python3 setup.py install --user`.
 
 5. Si vous rencontrez une erreur d'installation, me prévenir.
 
