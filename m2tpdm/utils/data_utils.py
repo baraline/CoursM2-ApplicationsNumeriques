@@ -81,9 +81,9 @@ def load_sktime_dataset_split(name, normalize=True):
         
     Returns
     -------
-    X_train : array, shape=(n_samples_train, n_features, n_timestamps)
+    X_train : array, shape=(n_samples_train, n_timestamps)
         Training data from the dataset specified by path.
-    X_test : array, shape=(n_samples_test, n_features, n_timestamps)
+    X_test : array, shape=(n_samples_test, n_timestamps)
         Testing data from the dataset specified by path.
     y_train : array, shape=(n_samples_train)
         Class of the training data.
