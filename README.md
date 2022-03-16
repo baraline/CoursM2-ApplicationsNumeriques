@@ -23,7 +23,8 @@ Si vous utilisez un IDE python (ex: Spyder inclut dans Anaconda) pas besoin des 
 # Suite aux bugs constatés en salle machine (E09) lors de l'installation suivre la procédure suivante:
 1. python3 -m pip install --user --upgrade pip
 2. pip3 install sktime==0.9 --user
-3. python3 setup.py install --user
+3. pip3 install scipy --user --upgrade
+4. python3 setup.py install --user
 
 ## Contributions
 Si vous souhaitez contribuer à améliorer cette page ou que vous avez des questions sur une partie du contenu, merci d'utiliser le système de tickets (issues) de ce Git.
