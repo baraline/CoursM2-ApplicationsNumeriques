@@ -20,7 +20,7 @@ Si vous utilisez un IDE python (ex: Spyder inclut dans Anaconda) pas besoin des 
 
 6. Le sujet du TP est disponible dans le fichier `m2tpdm/README.md`
 
-# Suite aux bugs constaté en salle machine (E09) lors de l'installation suivre la procédure suivante:
+# Suite aux bugs constatés en salle machine (E09) lors de l'installation suivre la procédure suivante:
 1. python3 -m pip install --user --upgrade pip
 2. pip3 install sktime==0.9 --user
 3. python3 setup.py install --user
