@@ -12,13 +12,18 @@ Si vous utilisez un IDE python (ex: Spyder inclut dans Anaconda) pas besoin des 
 
 2. Lancer une console python (via Anaconda ou votre installation de Python locale). De préférence sur Anaconda, créer un nouvel environnement.
 
-3. Naviguer vers le dossier `CoursM2-ApplicationsNumeriques` sur votre disque
+3. Naviguer vers le dossier `CoursM2-ApplicationsNumeriques` sur votre disque. Si vous êtes sur les machines de la fac, ajouter l'option `--user` a vos commandes `pip` ou `python3 install`.
 
-4. Lancer la commande  `python setup.py install`. Si plusieurs versions de Python sont présentes sur l'ordinateur, privilégié `python3 setup.py install`, si il y a des problèmes de droits `python3 setup.py install --user`.
+4. Lancer la commande `pip install sktime==0.9`, puis `python setup.py install`. Si plusieurs versions de Python sont présentes sur l'ordinateur, privilégié `python3 setup.py install`.
 
 5. Si vous rencontrez une erreur d'installation, me prévenir.
 
 6. Le sujet du TP est disponible dans le fichier `m2tpdm/README.md`
+
+# Suite aux bugs constaté en salle machine (E09) lors de l'installation suivre la procédure suivante:
+1. python3 -m pip install --user --upgrade pip
+2. pip3 install sktime==0.9 --user
+3. python3 setup.py install --user
 
 ## Contributions
 Si vous souhaitez contribuer à améliorer cette page ou que vous avez des questions sur une partie du contenu, merci d'utiliser le système de tickets (issues) de ce Git.
