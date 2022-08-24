@@ -172,7 +172,7 @@ class my_shapelet(BaseEstimator, TransformerMixin):
         subsequences = generate_subsequences_1D(X, self.shapelet_length, 1)
         if normalize:
             # we add 1e-8 to avoid division per 0 error and having to check for it
-            subsequences = (subsequences - subsequences.mean(axis=1))/(subsequences.std(axis=1) + 1e-8)
+            subsequences = (subsequences - subsequences.mean(axis=1, keepdims=True))/(subsequences.std(axis=1, keepdims=True) + 1e-8)
             S = (S - S.mean()) / (S.std() + 1e-8)
         return np.abs(subsequences - S).sum(axis=1)
 
@@ -202,7 +202,7 @@ class my_shapelet(BaseEstimator, TransformerMixin):
         subsequences = generate_subsequences_2D(X, self.shapelet_length, 1)
         if normalize:
             # we add 1e-8 to avoid division per 0 error and having to check for it
-            subsequences = (subsequences - subsequences.mean(axis=2))/(subsequences.std(axis=2) + 1e-8)
+            subsequences = (subsequences - subsequences.mean(axis=2, keepdims=True))/(subsequences.std(axis=2,, keepdims=True) + 1e-8)
             S = (S - S.mean()) / (S.std() + 1e-8)
         
         return subsequences - S
